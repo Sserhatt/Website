@@ -1,9 +1,10 @@
-# diQalamos Website
+# diQalamos Digital Humanities Engineer
 
-Professional website for Digital Humanities engineering services by Serhat Açar.
+Start-up website for DH @Serhat Açar.
 
 ## Project Structure
 - `index.html` - Main HTML file
+- `impressum.html` - License HTML file
 - `css/` - Stylesheets
   - `style.css` - Main styles
   - `animations.css` - Animation styles
@@ -21,17 +22,17 @@ Professional website for Digital Humanities engineering services by Serhat Açar
 3. Update contact information in `index.html` if needed
 4. Replace placeholder images in `images/` folder with your own:
    - `logo.svg` - Your logo
-   - `favicon.ico` - Website favicon
+   - `\images_name.(format)` - Your personalized images 
    - `hero-bg.jpg` - Hero section background image
 
 ## Features
 - Fully responsive design
 - Interactive animations
-- Professional Digital Humanities portfolio
+- Personal DH portfolio
 - SEO optimized
 - Accessible design
 
-## Technologies Used
+## Tools and Formats
 - HTML5
 - CSS3 (Flexbox, Grid)
 - Vanilla JavaScript
