@@ -1,0 +1,47 @@
+# diQalamos Website
+
+Professional website for Digital Humanities engineering services by Serhat Açar.
+
+## Project Structure
+- `index.html` - Main HTML file
+- `css/` - Stylesheets
+  - `style.css` - Main styles
+  - `animations.css` - Animation styles
+  - `responsive.css` - Responsive design
+- `js/` - JavaScript files
+  - `main.js` - Core functionality
+  - `animations.js` - Animation scripts
+  - `components.js` - Interactive components
+- `images/` - Image assets (add your images here)
+- `README.md` - This file
+
+## Setup Instructions
+1. Download all files maintaining the folder structure
+2. Upload to your web hosting service
+3. Update contact information in `index.html` if needed
+4. Replace placeholder images in `images/` folder with your own:
+   - `logo.svg` - Your logo
+   - `favicon.ico` - Website favicon
+   - `hero-bg.jpg` - Hero section background image
+
+## Features
+- Fully responsive design
+- Interactive animations
+- Professional Digital Humanities portfolio
+- SEO optimized
+- Accessible design
+
+## Technologies Used
+- HTML5
+- CSS3 (Flexbox, Grid)
+- Vanilla JavaScript
+- SVG for graphics
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+All rights reserved - diQalamos 2025
