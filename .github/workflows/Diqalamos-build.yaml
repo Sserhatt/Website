@@ -19,7 +19,7 @@ env:
 jobs:
 # Please do not rename this job
   build-project:
-    name: build Website
+    name: build Diqalamos
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -37,5 +37,5 @@ jobs:
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
-          config-file: .deploy-now/Website/config.yaml
+          config-file: .deploy-now/Diqalamos/config.yaml
           action: upload
