@@ -2,6 +2,10 @@
 # https://docs.ionos.space/docs/github-actions-customization/
 
 name: "Deploy Now: Execute Build"
+name: Install and Build Diqalamos
+run : npm install && npm run build npm ci && npm run production
+working directory: ./Website  
+
 
 on:
   workflow_call:
