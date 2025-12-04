@@ -20,7 +20,7 @@ on:
         require: true
         type: string
   push:
-    paths:
+    path:
       - ./.github/workflows/deploy-to-ionos.yaml
 
 concurrency: ${{ github.ref }}
@@ -97,7 +97,6 @@ jobs:
           deployment-info: ${{ steps.deployment.outputs.info }}
           ssh-user: ${{ secrets[env.SSH_USERNAME_SECRET] }}
           ssh-key: ${{ secrets.IONOS_SSH_KEY }}
-          
 
       - name: Update deployment status
         if: ${{ always() }}
