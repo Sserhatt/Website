@@ -2,10 +2,6 @@
 # https://docs.ionos.space/docs/github-actions-customization/
 
 name: "Deploy Now: Execute Build"
-name: Install and Build Diqalamos
-run : npm install && npm run build npm ci && npm run production
-working directory: ./Website  
-
 
 on:
   workflow_call:
@@ -18,7 +14,8 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: ./
+  DEPLOYMENT_FOLDER: build # The deployment folder
+
 
 jobs:
 # Please do not rename this job
@@ -41,5 +38,12 @@ jobs:
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
-          config-file: .deploy-now/Diqalamos/config.yaml
           action: upload
+          routes: 
+           -type: rewrite
+            from : /.*
+            to: /index.html
+           -type: redirect
+            from: /old-page
+            to: /new-page
+            status: 301
