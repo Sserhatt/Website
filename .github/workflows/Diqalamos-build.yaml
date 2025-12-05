@@ -14,7 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: diqalamos-website\index.html
+  DEPLOYMENT_FOLDER: .\index.html
 
 jobs:
 # Please do not rename this job
