@@ -97,7 +97,6 @@ jobs:
           deployment-info: ${{ steps.deployment.outputs.info }}
           ssh-user: ${{ secrets[env.SSH_USERNAME_SECRET] }}
           ssh-key: ${{ secrets.IONOS_SSH_KEY }}
-          
 
       - name: Update deployment status
         if: ${{ always() }}
@@ -124,4 +123,3 @@ jobs:
           project-id: ${{ inputs.project-id }}
           branch-id: ${{ inputs.branch-id }}
           action: set-deployments-finished
-
