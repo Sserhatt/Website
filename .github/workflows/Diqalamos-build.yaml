@@ -14,8 +14,7 @@ on:
         type: string
 
 env:
-  DEPLOYMENT_FOLDER: build # The deployment folder
-
+  DEPLOYMENT_FOLDER: diqalamos-website\index.html
 
 jobs:
 # Please do not rename this job
